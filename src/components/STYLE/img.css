@@ -1,0 +1,17 @@
+.arrow {
+  width: 25px;
+  height: 25px;
+  background-image: url("./img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.plus {
+  background-image: url("./img/plus.png");
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  position: absolute;
+  right: 5px;
+  top: 30px;
+}

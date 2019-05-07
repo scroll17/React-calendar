@@ -1,0 +1,250 @@
+
+@charset "utf-8";
+
+@font-face{
+    font-family: 'Montserrat_Bold';
+    src: url(./fonts/Montserrat_Bold.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Montserrat_Regular';
+    src: url(./fonts/Montserrat_Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.theadClass{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.theadClass2{
+    background-color: red;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: 13px/20px 'Montserrat_Bold', sans-serif;
+  color: #404040;
+}
+
+.container {
+  margin: 50px auto;
+  width: 640px;
+}
+.container .cal {
+  margin: 0 auto;
+}
+
+.cal {
+  display: block;
+  width: 216px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.cal a {
+  text-decoration: none;
+}
+
+.cal caption{
+    width: 216px;
+}
+
+.cal caption .add_event{
+    position: relative;;
+    background-color: #0B3157;
+    height: 56px;
+    text-align: right;
+}
+.cal caption .add_event img{
+   transition: 0.2s;
+   margin-top: 25px;
+   margin-right: 8px;
+}
+.cal caption .add_event img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.cal caption .month{
+    background-color: #0B3157;
+    display: flex;
+
+}
+.cal caption .prev a{
+    text-transform: uppercase;
+    color: #48C1C2;
+    font-family: 'Montserrat_Bold', sans-serif;
+    font-size: 10px;
+    margin-left: 7px;
+}
+.cal caption .next a{
+    text-transform: uppercase;
+    color: #48C1C2;
+    font-family: 'Montserrat_Bold', sans-serif;
+    font-size: 10px;
+    margin-left: 35px;
+}
+.cal caption .month_now {
+    text-transform: uppercase;
+    color: #FFFF;
+    font-family: 'Montserrat_Bold', sans-serif;
+    font-size: 13px;
+    margin-left: 60px;
+}
+.cal caption .click_month img{
+   transition: 0.2s;
+}
+.cal caption .click_month img:hover{
+   -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.cal th, .cal td {
+  width: 30px;
+  text-align: center;
+  font-family: 'Montserrat_Regular', sans-serif;
+  color: #FFFFFF;
+}
+.cal th:first-child, .cal td:first-child {
+  border-left: 0;
+}
+.cal th {
+  font-family: 'Montserrat_Bold', sans-serif;
+  font-size: 8px;
+  color: #696969;
+  text-transform: uppercase;
+  background: #0B3157;;
+
+}
+.cal td {
+  width: 216px;
+  background-color: #FFFFFF;
+}
+.cal td a {
+  font-family: 'Montserrat_Regular';
+  font-weight: 600;
+  clear: both;
+  display: block;
+  position: relative;
+  width: 30px;
+  line-height: 28px;
+  color: #0B3157;
+  font-size: 11px;
+}
+.cal td a:hover, .cal td.off a {
+  background: #f3f3f3;
+}
+.cal td.off a {
+  color: #b3b3b3;
+}
+.cal td.active a, .cal td a:active {
+  font-size: 10px;
+  margin: 0px;
+  color: #f3f3f3;
+  border-radius: 17%;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background: #0B3157;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.cal td.active_now a, .cal td a:active {
+  color: #F06543;
+}
+.cal td.active:first-child a, .cal td:first-child a:active {
+  border-left: 0;
+  margin-left: 0;
+}
+.cal td.active:last-child a, .cal td:last-child a:active {
+  border-right: 0;
+  margin-right: 0;
+}
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.cal div.today_all {
+ text-align: center;
+ text-transform: uppercase;
+ color: #0B3157;
+ font-size: 14px;
+ font-family: 'Montserrat_Bold', sans-serif;
+ font-weight: 700;
+ padding-top: 15px;
+ padding-bottom: 15px;
+}
+
+.cal td.plan {
+ color: #FFF;
+ font-size: 10px;
+ font-family: 'Montserrat_Bold', sans-serif;
+ background-color: #45B4B7;
+ height: 35px;
+ border: 5px solid white;
+ border-radius: 10px;
+}
+.cal td.plan_1 {
+ color: #FFF;
+ font-size: 10px;
+ font-family: 'Montserrat_Bold', sans-serif;
+ background-color: darkgrey;
+ height: 55px;
+ border: 5px solid white;
+ border-radius: 10px;
+}
